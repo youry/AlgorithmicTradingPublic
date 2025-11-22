@@ -1,0 +1,6 @@
+CREATE SCHEMA IF NOT EXISTS market;
+
+CREATE TABLE IF NOT EXISTS market.Sectors (
+    Symbol VARCHAR(10) PRIMARY KEY,
+    Sector VARCHAR(50)
+);
