@@ -1,7 +1,7 @@
 # Auto Data Collector (FMP → PostgreSQL)
 
 ## Overview
-This system continuously collects 5-minute interval stock, index, and commodity price data from the Financial Modeling Prep (FMP) API and stores it into a PostgreSQL database.
+This system continuously collects 5-minute interval stock, index, and commodity price data from the Financial Modelling Prep (FMP) API and stores it in a PostgreSQL database.
 
 The Auto Data Collector is designed to run within our Arbutus Cloud VM instance, where it operates as a background service managed by systemd timers. This setup ensures that market data is collected routinely and continuously throughout trading hours, maintaining hourly database updates for all tracked tickers
 
@@ -9,17 +9,17 @@ The Auto Data Collector is designed to run within our Arbutus Cloud VM instance,
 
 ## How To Connect to DB
 
-If you want to connect to the auto collector DB from your computer you first need a ssh key-pair set up for the project.
+If you want to connect to the auto collector DB from your computer, you first need an SSH key pair set up for the project.
 
-Once you have setup ssh then you can do ssh local port forwarding to connect to the postgres port secret using local port secret.
+Once you have set up SSH, you can use SSH local port forwarding to connect to the PostgreSQL port secret on the local machine.
 
 `ssh -L secret:127.0.0.1:secret almalinux@secretip`
 
-Then try connecting to postgres using db connection info:
+Then try connecting to PostgreSQL using db connection info:
  - host: 127.0.0.1
- - username: secret
- - port: secret
- - database: secret
+ - username: <your user name>
+ - port: <your port>
+ - database: <your DBMS name>
  
 
 
