@@ -17,9 +17,9 @@ Once you have set up SSH, you can use SSH local port forwarding to connect to th
 
 Then try connecting to PostgreSQL using db connection info:
  - host: 127.0.0.1
- - username: <your user name>
- - port: <your port>
- - database: <your DBMS name>
+ - username: \<your user name\>
+ - port: \<your port\>
+ - database: \<your DBMS name\>
  
 
 
